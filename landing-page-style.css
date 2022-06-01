@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #555;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  #header-img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav-bar {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  #nav-bar a {
+    float: right;
+    color: #555;
+    text-align: center;
+    padding: 38px 68px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 500px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    #header-img {
+      display: none;
+    }
+    #logo {
+      text-align: center;
+    }
+  
+    #logo {
+      padding: 10px;
+    }
+    #nav-bar {
+      height: 60px;
+      justify-content: space-around;
+    }
+  }
+  
+  #about {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-left: 120px;
+    margin-top: 150px;
+    margin-right: 120px;
+  }
+
+  #inspiration {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+  }
+  
+  #inspiration > iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+  
+  #plants-collection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+    margin-right: 15px;
+  }
+  
+  .plant > .level {
+    background-color: #98c7b5;
+    padding: 8px 0;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .plant > h2 {
+    margin-top: 20px;
+  }
+  
+  .plant > h3 {
+    margin-top: 20px;
+  }
+  
+  .plant > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: white;
+  }
+  
+  .plant > button:hover {
+    background-color: #d0e0e3;
+    transition: background-color 1s;
+  }
+  
+  #subscribe {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    margin-top: 70px;
+  }
+  
+  #subscribe > h3 {
+    margin-top: 15px;
+  }
+  
+  #email {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
